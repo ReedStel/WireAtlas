@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">WireAtlas</title>
+  <desc id="desc">A dark technical banner showing packets moving through a bounded protocol decoder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0b1d31"/>
+      <stop offset="1" stop-color="#102b3b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3ddbd9"/>
+      <stop offset="1" stop-color="#79a8ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7aa2c4" stroke-opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="22" fill="url(#grid)"/>
+  <path d="M0 255C210 205 310 285 490 230S820 170 1200 225V320H0Z" fill="#0f3141" opacity=".42"/>
+
+  <g transform="translate(70 70)">
+    <rect width="132" height="132" rx="28" fill="#0b2033" stroke="#3ddbd9" stroke-width="2"/>
+    <path d="M28 42h76M28 66h76M28 90h76" stroke="#79a8ff" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+    <path d="M42 29v74M66 29v74M90 29v74" stroke="#3ddbd9" stroke-width="2" opacity=".42"/>
+    <circle cx="42" cy="42" r="7" fill="#3ddbd9"/>
+    <circle cx="66" cy="66" r="7" fill="#f7c66b"/>
+    <circle cx="90" cy="90" r="7" fill="#79a8ff"/>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="244" y="126" fill="#f1f7fb" font-size="62" font-weight="750" letter-spacing="-2">WireAtlas</text>
+    <text x="246" y="166" fill="#9db6c9" font-size="22">Defensive offline PCAP inspection in C++20</text>
+    <g transform="translate(246 198)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">
+      <rect width="405" height="38" rx="10" fill="#071521" stroke="#27465c"/>
+      <circle cx="22" cy="19" r="5" fill="#3ddbd9"/>
+      <text x="38" y="24" fill="#d8e8f2">bounded reads  ·  deterministic JSON  ·  no capture</text>
+    </g>
+  </g>
+
+  <g transform="translate(720 54)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace">
+    <path d="M0 106H410" stroke="url(#accent)" stroke-width="2" opacity=".6"/>
+    <circle cx="22" cy="106" r="12" fill="#3ddbd9" opacity=".25" filter="url(#glow)"/>
+    <circle cx="22" cy="106" r="5" fill="#3ddbd9"/>
+    <circle cx="132" cy="106" r="5" fill="#6ec8e5"/>
+    <circle cx="245" cy="106" r="5" fill="#79a8ff"/>
+    <circle cx="388" cy="106" r="5" fill="#f7c66b"/>
+    <g font-size="13" text-anchor="middle">
+      <text x="22" y="88" fill="#bcd1df">PCAP</text>
+      <text x="132" y="88" fill="#bcd1df">Ethernet</text>
+      <text x="245" y="88" fill="#bcd1df">IP / TCP</text>
+      <text x="388" y="88" fill="#bcd1df">Report</text>
+    </g>
+    <g transform="translate(2 146)">
+      <rect width="410" height="76" rx="12" fill="#071521" stroke="#27465c"/>
+      <text x="18" y="25" fill="#69869b" font-size="12">#  SOURCE          DESTINATION      PROTOCOL</text>
+      <text x="18" y="49" fill="#dbe9f2" font-size="13">1  192.0.2.10  →  198.51.100.53   DNS</text>
+      <text x="18" y="66" fill="#a8bfd0" font-size="12">   query example.test A</text>
+    </g>
+  </g>
+</svg>

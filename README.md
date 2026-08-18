@@ -1,8 +1,13 @@
-# WireAtlas
+<p align="center">
+  <img src="docs/wireatlas-banner.svg" alt="WireAtlas — defensive offline PCAP inspection in C++20" width="100%">
+</p>
 
-[![CI](https://github.com/ReedStel/WireAtlas/actions/workflows/ci.yml/badge.svg)](https://github.com/ReedStel/WireAtlas/actions/workflows/ci.yml)
-![C++20](https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus)
-![Source available](https://img.shields.io/badge/license-source--available-orange)
+<p align="center">
+  <a href="https://github.com/ReedStel/WireAtlas/actions/workflows/ci.yml"><img src="https://github.com/ReedStel/WireAtlas/actions/workflows/ci.yml/badge.svg" alt="CI status"></a>
+  <img src="https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus" alt="C++20">
+  <img src="https://img.shields.io/badge/dependencies-runtime%3A_0-3ddbd9" alt="No runtime dependencies">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-source--available-f0a94a" alt="Source-available licence"></a>
+</p>
 
 WireAtlas is a dependency-free C++20 command-line tool for inspecting classic PCAP files
 without capturing or transmitting network traffic. It turns raw Ethernet frames into a readable
@@ -58,6 +63,18 @@ Generate the repository's safe demo capture and inspect it:
 
 On a multi-configuration build such as Visual Studio, executables are normally under
 `build/Release/`.
+
+### Sixty-second review
+
+If you are evaluating the repository, start with three things:
+
+1. Run the synthetic capture generator and the `inspect` command above.
+2. Open [`tests/tests.cpp`](tests/tests.cpp) to see malformed-input, endian, protocol, and output
+   coverage without external fixture files.
+3. Read [`docs/design.md`](docs/design.md) for the failure-containment and byte-boundary decisions.
+
+That path shows the user experience, verification depth, and design reasoning without requiring a
+real capture or privileged network access.
 
 ## CLI
 
