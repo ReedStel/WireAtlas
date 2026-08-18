@@ -31,7 +31,8 @@ std::string fit(std::string_view value, const std::size_t width) {
 
 std::string json_escape(std::string_view value) {
     std::ostringstream output;
-    for (const unsigned char character : value) {
+    for (const char raw_character : value) {
+        const auto character = static_cast<unsigned char>(raw_character);
         switch (character) {
             case '"': output << "\\\""; break;
             case '\\': output << "\\\\"; break;
