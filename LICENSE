@@ -1,0 +1,59 @@
+WireAtlas Source-Available License 1.0
+
+Copyright (c) 2026 Reed Stelfox. All rights reserved.
+
+1. Permission
+
+Subject to the conditions below, you may view the Source Code, make a copy of the Source Code,
+compile it, and run an unmodified copy of the Software for personal, educational, or non-commercial
+evaluation purposes.
+
+2. Conditions
+
+You must retain this license and all copyright, attribution, and proprietary notices in every copy
+you are permitted to make. You may not state or imply that the copyright holder endorses you or your
+use of the Software.
+
+3. Restrictions
+
+Without prior written permission from the copyright holder, you may not:
+
+a. modify, adapt, translate, or create derivative works from the Software;
+b. distribute, publish, sublicense, transfer, or provide copies of the Software to another person,
+   except through GitHub's standard public-repository viewing and forking features;
+c. sell, rent, lease, license for a fee, or otherwise commercially exploit the Software;
+d. offer the Software or a derivative as a hosted service or as part of a paid product or service;
+e. remove or obscure copyright, attribution, license, or proprietary notices; or
+f. use the Software or its presentation in a way that suggests you authored the Software.
+
+4. Contributions
+
+You may prepare a modification solely to submit it to this repository as a proposed contribution.
+By submitting a contribution, you represent that you have the right to submit it and grant the
+copyright holder a perpetual, worldwide, irrevocable, royalty-free license to use, reproduce,
+modify, distribute, sublicense, and relicense that contribution. This section does not grant you a
+general right to distribute or use modified versions.
+
+5. No Trademark License
+
+This license grants no right to use the names, logos, or trademarks of WireAtlas or the copyright
+holder except as needed for truthful attribution.
+
+6. Termination
+
+Your rights under this license terminate automatically if you breach its terms. On termination, you
+must stop using the Software and delete copies in your possession or control, except copies retained
+solely where required by law.
+
+7. Disclaimer of Warranty and Limitation of Liability
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER WILL NOT BE LIABLE FOR
+ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR
+ITS USE.
+
+8. Other Rights
+
+All rights not expressly granted in this license are reserved by the copyright holder. Commercial,
+redistribution, modification, or alternative licensing requests require separate written permission.
