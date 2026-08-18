@@ -1,0 +1,9 @@
+/build/
+/out/
+*.pcap
+*.pcapng
+*.profraw
+compile_commands.json
+.cache/
+.idea/
+.vscode/

@@ -1,0 +1,8 @@
+WireAtlas
+Copyright (c) 2026 Reed Stelfox. All rights reserved.
+
+This repository uses documentation-only sample values, including example.test, TEST-NET IPv4
+addresses, and the 2001:db8::/32 IPv6 documentation prefix. No real traffic capture is distributed.
+
+WireAtlas is source-available under the terms in LICENSE. It is not distributed under an
+OSI-approved open-source license.

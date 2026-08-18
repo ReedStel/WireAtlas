@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "dev",
+      "displayName": "Developer build",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/dev",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "WIREATLAS_WARNINGS_AS_ERRORS": "ON"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release build",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "WIREATLAS_WARNINGS_AS_ERRORS": "ON"
+      }
+    },
+    {
+      "name": "sanitizers",
+      "displayName": "ASan + UBSan build",
+      "inherits": "dev",
+      "binaryDir": "${sourceDir}/build/sanitizers",
+      "cacheVariables": {
+        "WIREATLAS_ENABLE_SANITIZERS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "dev",
+      "configurePreset": "dev"
+    },
+    {
+      "name": "release",
+      "configurePreset": "release"
+    },
+    {
+      "name": "sanitizers",
+      "configurePreset": "sanitizers"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "dev",
+      "configurePreset": "dev",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "sanitizers",
+      "configurePreset": "sanitizers",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
