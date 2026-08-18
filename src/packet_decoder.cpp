@@ -184,8 +184,9 @@ void parse_dns(PacketSummary& summary, Bytes payload, std::size_t packet_base, c
 std::string tcp_flags(const std::uint8_t flags) {
     std::string result;
     const std::array<std::pair<std::uint8_t, const char*>, 6> known{{
-        {0x20, "URG"}, {0x10, "ACK"}, {0x08, "PSH"},
-        {0x04, "RST"}, {0x02, "SYN"}, {0x01, "FIN"},
+        {std::uint8_t{0x20}, "URG"}, {std::uint8_t{0x10}, "ACK"},
+        {std::uint8_t{0x08}, "PSH"}, {std::uint8_t{0x04}, "RST"},
+        {std::uint8_t{0x02}, "SYN"}, {std::uint8_t{0x01}, "FIN"},
     }};
     for (const auto& [mask, name] : known) {
         if ((flags & mask) == 0) continue;
